@@ -11,7 +11,7 @@ source=("git+$url.git")
 sha256sums=('SKIP')  # Skip checksum for Git repos
 
 package() {
-  cd "$srcdir/EMOS-Installer"
-  install -Dm755 installer.sh "$pkgdir/usr/local/bin/emos-installer"
+  cd "$srcdir/EMOS-INSTALLER"
+  install -Dm755 emos-installer.sh "$pkgdir/usr/local/bin/emos-installer"
   # Install additional files (e.g., docs, configs) if needed
 }
